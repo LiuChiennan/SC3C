@@ -49,5 +49,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        mBlueTooth.unRegister();
+        Log.d(TAG,"结束mainactivity");
+    }
+
 
 }
