@@ -164,7 +164,7 @@ public class BlueTooth {
                 ClsUtils.createBond(device.getClass(), device);
                 ClsUtils.cancelPairingUserInput(device.getClass(), device);
 
-                Log.d(TAG,"配对成功");
+                Log.d(TAG,"配对成功");//。。。
 
             }catch (Exception e){
                 Log.d(TAG,"配对异常: "+e.toString());
